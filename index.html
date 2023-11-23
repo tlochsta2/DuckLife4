@@ -13,16 +13,27 @@
             }
         </style>
         <center><img src="img/header.png" class="header"></center>
-       <script>
-    window.RufflePlayer = window.RufflePlayer || {};
-    window.addEventListener("load", (event) => {
-        const ruffle = window.RufflePlayer.newest();
-        const player = ruffle.createPlayer();
-        const container = document.getElementById("container");
-        container.appendChild(player);
-        player.load("misnowdriftland_final.swf");
-    });
-</script>
-<script src="ruffle-nightly-2023_11_23-web-selfhosted/ruffle.js"></script>
+        <div>
+            <table width="100%" height="100%">
+                <tr>
+                    <td  align="center" valign="top">
+                           <object type="application/x-shockwave-flash" id="stage" data="misnowdriftland_final.swf" width="900" height="578">
+                            <param name="allowScriptAccess" value="sameDomain" />
+                            <param name="movie" value="misnowdriftland_final.swf" />
+                            <param name="quality" value="high" />
+                            <param name="menu" value="false" />
+                                   <a target="_blank" href="http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash"><img src="img/noflash.jpg" alt="GET FLASH PLAYER" height="578" width="900" border="0" /></a>
+                        </object>
+                    </td>
+                </tr>
+            </table>
+        </div>
     </body>
+    <body>
+    <object>
+        <embed src="misnowdriftland_final.swf" width="550" height="400" />
+    </object>
+
+    <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
+</body>
 </html>
